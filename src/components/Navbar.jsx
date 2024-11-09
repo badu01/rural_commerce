@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="bg-pastelBlue p-4 flex justify-between items-center shadow-md text-white">
+    <nav className="bg-pastelBlue p-4 flex justify-between items-center shadow-md">
       <h1 className="text-2xl font-semibold text-gray-800">UEP Platform</h1>
       <div className="space-x-4 text-gray-700">
         <Link to="/" className="hover:text-gray-900">Home</Link>
