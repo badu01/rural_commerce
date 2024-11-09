@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rural_commerce/static/css/main.24115ee5.css",
+    "main.js": "/rural_commerce/static/js/main.33ac7e97.js",
+    "index.html": "/rural_commerce/index.html",
+    "main.24115ee5.css.map": "/rural_commerce/static/css/main.24115ee5.css.map",
+    "main.33ac7e97.js.map": "/rural_commerce/static/js/main.33ac7e97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24115ee5.css",
+    "static/js/main.33ac7e97.js"
+  ]
+}
