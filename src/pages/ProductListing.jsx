@@ -2,9 +2,13 @@ import ProductCard from '../components/ProductCard';
 
 function ProductListing() {
   const products = [
-    { id: 1, name: 'Product 1', description: 'Description of Product 1' },
-    { id: 2, name: 'Product 2', description: 'Description of Product 2' },
+    { id: 1, name: 'Organic Honey', description: 'Pure, raw honey sourced directly from local farms, rich in natural antioxidants.' },
+    { id: 2, name: 'Handwoven Cotton Scarf', description: 'Soft and lightweight scarf made by local artisans using 100% organic cotton.' },
+    { id: 3, name: 'Natural Beeswax Candles', description: 'Eco-friendly candles made from pure beeswax, offering a warm, natural fragrance.' },
+    { id: 4, name: 'Herbal Tea Blend', description: 'A soothing blend of locally sourced herbs, perfect for relaxation and stress relief.' },
+    { id: 5, name: 'Wooden Spice Box', description: 'Beautiful handcrafted wooden box with multiple compartments for storing spices.' }
   ];
+  
 
   return (
     <div className="p-8">
