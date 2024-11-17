@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rural_commerce/static/css/main.57b751a4.css",
-    "main.js": "/rural_commerce/static/js/main.586af258.js",
+    "main.css": "/rural_commerce/static/css/main.96ed7e17.css",
+    "main.js": "/rural_commerce/static/js/main.41a2c3ae.js",
     "static/media/mainBG.png": "/rural_commerce/static/media/mainBG.a7edd16ab142cea3fc9a.png",
     "index.html": "/rural_commerce/index.html",
-    "main.57b751a4.css.map": "/rural_commerce/static/css/main.57b751a4.css.map",
-    "main.586af258.js.map": "/rural_commerce/static/js/main.586af258.js.map"
+    "main.96ed7e17.css.map": "/rural_commerce/static/css/main.96ed7e17.css.map",
+    "main.41a2c3ae.js.map": "/rural_commerce/static/js/main.41a2c3ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.57b751a4.css",
-    "static/js/main.586af258.js"
+    "static/css/main.96ed7e17.css",
+    "static/js/main.41a2c3ae.js"
   ]
 }
