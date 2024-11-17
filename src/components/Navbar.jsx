@@ -27,14 +27,8 @@ function Navbar() {
           <Link to="/products" className=" hover:text-orangeMain">
             Products
           </Link>
-          <Link to="/inventory" className="hover:text-orangeMain">
-            Inventory
-          </Link>
           <Link to="/orders" className="hover:text-orangeMain">
             Orders
-          </Link>
-          <Link to="/analytics" className="hover:text-orangeMain">
-            Analytics
           </Link>
           <Link to="/contact" className="hover:text-orangeMain">
             Contact
@@ -52,7 +46,7 @@ function Navbar() {
 
           {/* Dropdown with Transition */}
           <div
-            className={`absolute top-16 right-0 w-48 bg-white shadow-lg z-10 transition-transform duration-300 ease-in-out ${
+            className={`absolute top-16 right-0 w-48 bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
               profileMenuOpen ? "scale-y-100" : "scale-y-0"
             } origin-top`}
           >
@@ -83,7 +77,7 @@ function Navbar() {
 
         {/* Hamburger Menu */}
         <button
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg

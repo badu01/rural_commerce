@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { UserCircleIcon } from "@heroicons/react/solid";
-import NavLogo from "../assets/logos/NavLogo";
+import NavLogoBlack from "../assets/logos/TextLogoBlack";
 
-function PageNavbar() {
+function PageNavbar({className}) {
   const [isOpen, setIsOpen] = useState(false);
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
 
   return (
     <nav
-      className="p-4 absolute top-0 left-0 right-0 z-50 text-white bg-pastelWhite"
+      className={`p-4 text-gray-900 shadow-md`}
     >
-      <div className="w-full flex justify-between items-center relative ">
+      <div className={`w-full flex justify-between items-center relative z-50`}>
         {/* Logo */}
-        <Link to="/">{<NavLogo />}</Link>
+        <Link to="/">{<NavLogoBlack />}</Link>
 
         {/* Navigation Links */}
         <div className="hidden md:flex flex-grow justify-center space-x-6">
@@ -23,14 +23,8 @@ function PageNavbar() {
           <Link to="/products" className=" hover:text-orangeMain">
             Products
           </Link>
-          <Link to="/inventory" className="hover:text-orangeMain">
-            Inventory
-          </Link>
           <Link to="/orders" className="hover:text-orangeMain">
             Orders
-          </Link>
-          <Link to="/analytics" className="hover:text-orangeMain">
-            Analytics
           </Link>
           <Link to="/contact" className="hover:text-orangeMain">
             Contact
@@ -48,7 +42,7 @@ function PageNavbar() {
 
           {/* Dropdown with Transition */}
           <div
-            className={`absolute top-16 right-0 w-48 bg-white shadow-lg z-10 transition-transform duration-300 ease-in-out ${
+            className={`absolute top-16 right-0 w-48 bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
               profileMenuOpen ? "scale-y-100" : "scale-y-0"
             } origin-top`}
           >
@@ -109,7 +103,7 @@ function PageNavbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-10 w-full bg-pastelWhite md:hidden">
+          <div className="absolute top-10 w-full bg-white md:hidden">
             <div className="flex flex-col space-y-2 p-4">
               <Link to="/" className="text-gray-700 hover:text-gray-900">
                 Home
@@ -122,23 +116,13 @@ function PageNavbar() {
                 Products
               </Link>
               <hr className="border-t border-gray-200" />
-              <Link
-                to="/inventory"
-                className="text-gray-700 hover:text-gray-900"
-              >
-                Inventory
-              </Link>
+            
               <hr className="border-t border-gray-200" />
               <Link to="/orders" className="text-gray-700 hover:text-gray-900">
                 Orders
               </Link>
               <hr className="border-t border-gray-200" />
-              <Link
-                to="/analytics"
-                className="text-gray-700 hover:text-gray-900"
-              >
-                Analytics
-              </Link>
+              
               <hr className="border-t border-gray-200" />
               <Link to="/contact" className="text-gray-700 hover:text-gray-900">
                 Contact
