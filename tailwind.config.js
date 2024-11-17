@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pastelBlue: "#B3E5FC",
-        pastelGreen: "#C8E6C9",
-        pastelPink: "#F8BBD0",
-        pastelYellow: "#FFF9C4",
+        pastelWhite: "#F8F8F8",
+        pastelGreen: "#000000",
+        orangeMain: "#FF8F07",
+        greenMain: "#abd373",
       },
     },
   },

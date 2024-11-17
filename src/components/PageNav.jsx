@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 import { UserCircleIcon } from "@heroicons/react/solid";
 import NavLogo from "../assets/logos/NavLogo";
 
-function Navbar() {
+function PageNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
 
   return (
     <nav
-      className="p-4 absolute top-0 left-0 right-0 z-50 text-white"
-      style={{
-        background:
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))",
-      }}
+      className="p-4 absolute top-0 left-0 right-0 z-50 text-white bg-pastelWhite"
     >
       <div className="w-full flex justify-between items-center relative ">
         {/* Logo */}
@@ -183,4 +179,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default PageNavbar;

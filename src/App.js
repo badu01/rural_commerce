@@ -10,6 +10,8 @@ import OrderManagement from './pages/OrderManagement';
 import Recommendations from './pages/Recommendations';
 import Analytics from './pages/Analytics';
 import Contact from './pages/Contact';
+import ItemListing from './pages/ItemsList';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path='/products/:category' element={<ItemListing/>}/>
+          <Route path='/cart' element={<CartPage/>} />
         </Routes>
         <Footer />
       </div>
