@@ -95,7 +95,7 @@ function CartPage() {
                 </button>
               </div>
             ))}
-            <div className="mt-4">
+            <div className="mt-3">
               <h3 className="font-semibold">Total: ₹{totalPrice}</h3>
               <button
                 class="bg-slate-100 text-center w-full rounded-2xl h-14 relative text-black text-xl font-semibold group overflow-hidden"
